@@ -33,6 +33,7 @@
             }
             
             blockquote {
+              margin-top: 10px;
   min-height: 5em;
   padding: 1em 4em;
   font: 1em/150% sans-serif;
@@ -85,20 +86,95 @@ blockquote i {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
+nav {
+  background: #594848;
+  width: 100%;
+  overflow: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  float: left;
+}
+nav a {
+  width: 120px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: #594848;
+  font-size: 17px;
+  color: white;
+  padding: 20px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+  max-width: 210px;
+  margin: auto;
+  background: #f2f2f2;
+  overflow: auto;
+}
+.column {
+  text-align: center;
+  margin-left: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+.column input {
+  width: 50px;
+  height: auto;
+}
+.desc {
+  padding: 5px;
+  text-align: center;
+}
         </style>
     </head>
     <body>
         <div>
             <h1>Aayu's Media Hub</h1>
         </div>
-        
-        <div>
-            <marquee id="log1" direction="right"  behavior="alternate">
-                Enjoy my Highlights
-            </marquee>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Info</a></li>
+            <li><a href="#"> Accounts</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+        </nav>
         <div style="text-align: center; color: aquamarine;">
             <h2>Multimedia</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <input type="image" src="static\music.png" name="submit" alt="submit" height="180px" width="150px">
+              <div class="desc"> Music </div>
+          </div>
+          <div class="column">
+            <input type="image" src="static\img2.png" name="submit" alt="submit" height="180px" width="150px">
+            <div class="desc"> Pictures </div>
+          </div>
+          <div class="column">
+            <input type="image" src="static\video.png" name="submit" alt="submit" height="180px" width="150px">
+            <div class="desc"> Videos </div>
+          </div>
+          <div class="column">
+            <input type="image" src="static\notep1.png" name="submit" alt="submit" height="180px" width="150px">
+              <div class="desc"> Notepad </div>
+          </div>
+          <div class="column">
+            <input type="image" src="static\GitHub-Logo.png" name="submit" alt="submit" height="350px" width="150px">
+              <div class="desc"> GitHub </div>
+          </div>
+          <div class="column">
+            <input type="image" src="static\games.jpeg" name="submit" alt="submit" height="180px" width="150px">
+              <div class="desc"> Games </div>
+          </div>
+           
         </div>
         <blockquote>
             People who think they know everything are a great annoyance to those of us who
@@ -119,6 +195,11 @@ blockquote i {
         <div id="logo">
             <img id="boon" src="static\text1.png">
         </div>
+        <div>
+          <marquee id="log1" direction="right"  behavior="alternate">
+              Enjoy the Highlights
+          </marquee>
+      </div>
         <div style="text-align: center; padding: 4%;">
             <button>Contact Us</button>
         </div>
